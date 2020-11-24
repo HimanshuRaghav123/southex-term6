@@ -1,0 +1,178 @@
+Home work:-
+
+Single linked list.. and doubly linked list(14 algos)
+A:-insertion:
+1. begining 2. mid 3.end
+
+B:-Traversing
+
+C:-deletion:
+1.begining 2. mid 3.end
+
+							[Himanshu Raghav]
+**************************************************************************
+
+ Algorithm of Linear Search...
+
+A. Read the ID that you want to search.
+B. Set i = 0.
+C. Repeat step D until i > n or arr[i] = ID.
+D. Increment i by 1.
+5. If i > n:
+	Display "Not Found".
+   Else
+	Display "Found".
+*******************************************************************************
+
+ Algorithm of Binary Search...
+
+A. Accept the element to be searched.
+B. Set lowerbound = 0.
+C. Set upperbound = n-1.
+D. Set mid = (lowerbound + upperbound)/2.
+E. If arr[mid] = desired element:
+	(i) Display "Found".
+	(ii) Go to step 10.
+F. If desired element < arr[mid]:
+	(i) Set upperbound = mid - 1.
+G. If desired element > aar[mid]:
+	(i) Set lowerbound = mid + 1.
+H. If lowerbound <= upperbound:
+	(i) Go to step D.
+I. Display "Not Found".
+J.Exit.
+**********************************************************************
+
+ Algorithm of Singly linked list for begining...
+(Insertion)
+
+A. Allocate memory for the new node.
+B. Assign value to the data field of th new node.
+C. Make the next field of the new node in the list.
+D. Make (Start) point to the new node.
+************************************************************************
+
+ Algorithm of Singly linked list for mid...
+(Insertion)
+
+A. Identify the nodes between which the new node is to be inserted.Mark them
+   as previous and current. to locate previous and current, execute the following steps:
+	(i)   make current point to the first node.
+	(ii)  make previous point to null.
+	(iii) repeat step (iv) and step (v) until current becomes greater than
+	      newnode or current becomes equal to null.
+	(iv)  make previous point to current.
+	(v)   make current point to the nextnode in sequence.
+
+B. Allocate memory for the new node.
+C. Assign value to the data field of the new node.
+D. Make the next filed of the newnode point to current.
+****************************************************************************************
+
+ Algorithm of Singly linked list for end...
+(Insertion)
+
+A. Identify the nodes between which the new node is to be inserted.Mark them
+   as previous and current. to locate previous and current, execute the following steps:
+	(i)   make current point to the first node.
+	(ii)  make previous point to null.
+	(iii) repeat step (iv) and step (v) until current becomes greater than
+	      newnode or current becomes equal to null.
+	(iv)  make previous point to current.
+	(v)   make current point to the nextnode in sequence.
+
+B. Allocate memory for the new node.
+C. Assign value to the data field of the new node.
+D. Make the next field of the newnode point to current.
+E. Make the next field of the previous to newnode.
+***********************************************************************
+Algorithm of doubly linked list for begining...
+(Insertion)
+
+A. Allocate memory for new node.
+B. Assign the value to the data field of newnode.
+C. Make the next filed of newnode that point to  start.
+D. Make previous of start point to the newnode.
+E. Make start that point to newnode.
+***********************************************************************
+Algorithm of doubly linked list for mid and end...
+(Insertion)
+A.Find the positon where you want to insert node.
+B. Make start as current. 
+C. Make previous as null.
+D. Start counter from 1 to pos-1
+	(i)make previous as null.
+	(ii)make current point to next node in the sequence.
+E. Allocate new node.
+F. Assign data to new node.
+G. Make the next field of new node that point to current.
+H. Make the previous field of new node that point to the previous. 
+I. If current is not null
+	make the previous of current point to new node.
+J. Make next of previous to the new node.
+
+
+******************************************************************************
+Algorithm of doubly linked list for begining...
+(delete) 
+
+A. Make start as current.
+B. If start==null.
+ display empty
+C. Point start to the next node in the sequence.
+D. Now make previous of start as null.
+E. Release current.
+
+******************************************************************************
+Algorithm of doubly linked list for mid...
+(delete) 
+A.Find out the node that we want to delete.
+	(i)make start as current and prevoius as null.
+	(ii)repeat step (iii) and (iv) untill current will become null or equal to node that you want to delete.
+	(iii)make previous that point current.
+	(iv)make current that point next node in the sequence.
+B. Make the next field of previous that point to the successor of current.
+C. Make previous of successor of current that point to the previous.
+D. Replace the current node.
+
+******************************************************************************
+Algorithm of doubly linked list for end...
+(delete) 
+
+A. Find out the node
+	(i)make start as current.
+	(ii)make previous as null.
+	(iii)repeat untill current become null or current equal to value
+		(i)make previous point to current.
+		(ii)make current point to next node in the sequence.
+B. Make the next field of previous point to the successor fo current.
+C. Release the current.
+
+****************************************************************************************
+(Delete)
+ Algorithm of Singly linked list for begining...
+
+Make start as current.
+Make start point to the next node in the sequence.
+Release the memory of current node.
+*****************************************************************************************
+(Delete)
+Algorithm of Singly linked list for mid and end...
+
+A. Find the node
+(a) make start as current
+(b) previous as null
+(c) repeat some below step untill current become null or current value become equal to the value
+	(i)make previous as current
+	(ii)make current point to next node in sequence
+B. Make the next field of previous that will point to the successor of current.
+C. Release the occupied memory by current node. 
+
+******************************************************************************************
+
+Algorithm for traversing....
+
+A. Make start as current.
+B. Repeat some below step untill the current node become null
+	(a) Display the value that we have in current node.
+	(b) we move to the next node in the sequence.
